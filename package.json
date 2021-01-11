@@ -1,0 +1,32 @@
+{
+  "name": "npm-script",
+  "version": "0.1.0",
+  "description": "npm-script",
+  "main": "index.js",
+  "sd": "//asdasd",
+  "scripts": {
+    "lint:js": "eslint *.js --fix",
+    "lint:css": "stylelint *.css --fix",
+    "//": "运行所有代码和测试单元",
+    "test": " npm-run-all --parallel lint:*",
+    "client": "npm-run-all --parallel client:*",
+    "client:reload-server": "livereload *.html",
+    "client:static-server": "http-server"
+  },
+  "author": "mars",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "http-server": "^0.12.3",
+    "jsonlint": "^1.6.3",
+    "livereload": "^0.9.1",
+    "npm-run-all": "^4.1.5",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
