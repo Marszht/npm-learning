@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "npm-script",
   "main": "index.js",
-  "sd": "//asdasd",
   "scripts": {
     "lint:js": "eslint *.js --fix",
     "lint:css": "stylelint *.css --fix",
@@ -11,7 +10,9 @@
     "test": " npm-run-all --parallel lint:*",
     "client": "npm-run-all --parallel client:*",
     "client:reload-server": "livereload *.html",
-    "client:static-server": "http-server"
+    "client:static-server": "http-server",
+    "prepush": "npm run test",
+    "precommit": "npm lint:*"
   },
   "author": "mars",
   "license": "ISC",
@@ -23,7 +24,9 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "http-server": "^0.12.3",
+    "husky": "^4.3.7",
     "jsonlint": "^1.6.3",
+    "lint-staged": "^10.5.3",
     "livereload": "^0.9.1",
     "npm-run-all": "^4.1.5",
     "stylelint": "^13.8.0",

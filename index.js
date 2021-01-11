@@ -1,6 +1,6 @@
-// const str = 'some value';
+const str = 'some value';
 
-function fn() {
-  console.log('some log');
+function fn ()  {
+  console.log('some log', str);
 }
 fn();
