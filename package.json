@@ -4,8 +4,8 @@
   "description": "npm-script",
   "main": "index.js",
   "scripts": {
-    "lint:js": "eslint *.js --fix",
-    "lint:css": "stylelint *.css --fix",
+    "lint:js": "eslint *.js",
+    "lint:css": "stylelint *.css",
     "//": "运行所有代码和测试单元",
     "test": " npm-run-all --parallel lint:*",
     "client": "npm-run-all --parallel client:*",
