@@ -15,4 +15,7 @@
   // 自动格式化粘贴的代码
   "editor.formatOnPaste": true,
   "files.eol": "\n",
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
 }

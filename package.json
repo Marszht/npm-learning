@@ -4,8 +4,8 @@
   "description": "npm-script",
   "main": "index.js",
   "scripts": {
-    "lint:js": "eslint *.js --fix",
-    "lint:css": "stylelint *.css --fix",
+    "lint:js": "eslint *.js ",
+    "lint:css": "stylelint *.css",
     "test": " npm-run-all --parallel lint:*"
   },
   "husky": {
