@@ -6,22 +6,13 @@
   "scripts": {
     "lint:js": "eslint *.js --fix",
     "lint:css": "stylelint *.css --fix",
-    "//": "运行所有代码和测试单元",
-    "test": " npm-run-all --parallel lint:*",
-    "client": "npm-run-all --parallel client:*",
-    "client:reload-server": "livereload *.html",
-    "client:static-server": "http-server"
+    "test": " npm-run-all --parallel lint:*"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "pre-push": "npm test"
     }
-  },
-  "lint-staged": {
-    "*.js": "eslint",
-    "*.less": "stylelint",
-    "*.css": "stylelint"
   },
   "author": "mars",
   "license": "ISC",
