@@ -7,7 +7,7 @@
     "lint:js": "eslint *.js ",
     "lint:css": "stylelint *.css",
     "test": " npm-run-all --parallel lint:*",
-    "release:patch": "npm version patch"
+    "release:patch": "npm version patch  && git push && git push --tags"
   },
   "husky": {
     "hooks": {
