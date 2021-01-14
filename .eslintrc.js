@@ -9,5 +9,9 @@ module.exports = {
       'error',
       'windows',
     ],
+    indent: [
+      'error',
+      2,
+    ],
   },
 };

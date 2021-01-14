@@ -6,7 +6,8 @@
   "scripts": {
     "lint:js": "eslint *.js ",
     "lint:css": "stylelint *.css",
-    "test": " npm-run-all --parallel lint:*"
+    "test": " npm-run-all --parallel lint:*",
+    "release:patch": "npm version patch"
   },
   "husky": {
     "hooks": {
